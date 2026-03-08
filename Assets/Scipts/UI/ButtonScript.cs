@@ -1,14 +1,29 @@
-using UnityEngine;
-
 
 using UnityEngine;
 
-public class TogglePanel : MonoBehaviour
+public class WindowManager : MonoBehaviour
 {
-    public GameObject panel;
+    public GameObject[] panels;
 
-    public void Toggle()
+    public void OpenPanel(GameObject panelToOpen)
     {
-        panel.SetActive(!panel.activeSelf);
+        if (panelToOpen.activeSelf)
+        {
+            panelToOpen.SetActive(false);
+        }
+        else
+        {
+            // ájungia pasirinktà
+            
+            foreach (GameObject panel in panels)
+            {
+                panel.SetActive(false);
+            }
+            panelToOpen.SetActive(true);
+        }
+        // iðjungia visus langus
+
+
+        
     }
 }
