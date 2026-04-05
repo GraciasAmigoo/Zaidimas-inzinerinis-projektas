@@ -1148,6 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9689f459de54ef4fbb09f07d917be4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  sceneName: IntroYear
 --- !u!1 &1416376240
 GameObject:
   m_ObjectHideFlags: 0
